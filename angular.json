@@ -35,10 +35,15 @@
             "assets": [
               {
                 "glob": "**/*",
+                "input": "src/assets/imagens"
+              },
+              {
+                "glob": "**/*",
                 "input": "public"
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/magenta-violet.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -98,6 +103,7 @@
               }
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/magenta-violet.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -105,5 +111,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8dfac4d7-1e52-4a2e-beb2-d2b26ed51af0"
   }
 }
