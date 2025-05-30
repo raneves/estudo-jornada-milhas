@@ -3,6 +3,9 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon'; // <- IMPORTANTE!
 import { CardComponent } from '../card/card.component';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-form-busca',
@@ -10,7 +13,7 @@ import { MatChipsModule } from '@angular/material/chips';
   templateUrl: './form-busca.component.html',
   styleUrls: [ './form-busca.component.scss'],
   imports: [CardComponent, MatButtonToggleModule, // <- necessário para mat-button-toggle-group
-    MatIconModule, MatChipsModule]
+    MatIconModule, MatChipsModule, MatFormFieldModule, MatInputModule, MatButtonToggleModule,MatChipsModule   ]
 })
 export class FormBuscaComponent {
 
