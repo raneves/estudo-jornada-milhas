@@ -1,3 +1,4 @@
+import { MatChipsModule } from '@angular/material/chips';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -16,6 +17,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
 import {MatCardModule} from '@angular/material/card';
 import { CardDepoimentoComponent } from './shared/card-depoimento/card-depoimento.component';
+import { FormBuscaComponent } from './shared/form-busca/form-busca.component';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import { CardDepoimentoComponent } from './shared/card-depoimento/card-depoiment
     BannerComponent,
     CardBuscaComponent,
     MatCardModule,
-     CardDepoimentoComponent
+     CardDepoimentoComponent,
+     FormBuscaComponent,
+     MatButtonToggleModule,
+     MatIconModule,
+     MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
