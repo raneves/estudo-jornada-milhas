@@ -23,11 +23,15 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core'; // <- IMPORTANTE!
+import { MatNativeDateModule } from '@angular/material/core';
+import { ModalComponent } from './shared/modal/modal.component'; // <- IMPORTANTE!
+import {MatDialogModule} from '@angular/material/dialog';
+import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
+
 
   ],
   imports: [
@@ -52,7 +56,10 @@ import { MatNativeDateModule } from '@angular/material/core'; // <- IMPORTANTE!
      MatFormFieldModule,
      MatInputModule,
      MatDatepickerModule,
-     MatNativeDateModule
+     MatNativeDateModule,
+     MatDialogModule,
+     ModalComponent,
+     BotaoControleComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
